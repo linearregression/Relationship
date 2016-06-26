@@ -1,0 +1,19 @@
+{application, rls, [
+	{description, "Relationship micro service for sqor v2."},
+	{vsn, "0.0.1"},
+	{id, "git"},
+	{modules, []},
+	{registered, []},
+	{applications, [
+		csi,
+		compiler,
+		kernel,
+		stdlib,
+		neo4j,
+		syntax_tools,
+		goldrush,
+		lager
+	]},
+	{mod, {rls_app, []}},
+	{env, []}
+]}.
